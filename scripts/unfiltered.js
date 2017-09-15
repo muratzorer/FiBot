@@ -1,8 +1,5 @@
-
-
 module.exports = function(robot) {
-
-	robot.hear(/send mail/i, function(res){		
-		res.send("world");	
-	});
+    robot.respond(/send mail/i, function(msg){
+        msg.reply("world");
+    });
 }
